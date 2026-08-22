@@ -1,4 +1,65 @@
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#050308;color:#fff;font-family:Arial,sans-serif}.topbar,header{height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 6%;background:#050308;border-bottom:1px solid #35104d;position:sticky;top:0;z-index:5}.logo{font-weight:800;font-size:20px;color:#c21cff}.logo b{color:#fff}nav{display:flex;gap:28px}nav a{color:#fff;text-decoration:none;font-weight:800;font-size:13px}.hero{min-height:680px;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;background:radial-gradient(circle at 25% 50%,#56118a,transparent 42%),radial-gradient(circle at 75% 50%,#75101a,transparent 42%),#050308}.content{padding:70px 20px}.mark{font-size:80px;font-weight:900;text-shadow:0 0 30px #a000ff}.hero h1{font-size:clamp(42px,9vw,100px);margin:0;text-shadow:0 0 20px #a000ff}.hero h1 span{color:#bd20ff}.hero p{letter-spacing:4px;font-weight:700}.hero strong{color:#c21cff}.buttons{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:35px}.btn{padding:16px 25px;min-width:180px;border:1px solid #a000ff;border-radius:10px;background:#0b0611;color:#fff;text-decoration:none;font-weight:800;box-shadow:0 0 18px #50006b}.section{padding:70px 8%;text-align:center;border-top:1px solid #26102f}.section h2{color:#c21cff;font-size:34px}.section p{color:#bbb;font-size:18px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;text-align:left}.cards article{padding:25px;border:1px solid #321044;border-radius:14px;background:#0b0710}.cards h3{color:#d02aff}footer{text-align:center;padding:35px;color:#777;border-top:1px solid #26102f}@media(max-width:700px){nav{gap:10px}nav a{font-size:10px}.cards{grid-template-columns:1fr}}.champion {
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #050308;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #08050d;
+  border-bottom: 1px solid #8a2be2;
+  padding: 18px;
+  text-align: center;
+}
+
+.logo {
+  color: #c0c0c0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo b {
+  color: #8a2be2;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #a855f7;
+}
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #050308, #18052b, #050308);
+}
+
+.content {
+  width: 95%;
+  max-width: 1100px;
+}
+
+.champion {
   width: 42%;
   max-width: 420px;
   height: 500px;
@@ -6,33 +67,85 @@
   object-position: center;
   border-radius: 18px;
   margin: 10px;
-  vertical-align: middle;
   box-shadow: 0 0 25px rgba(150, 0, 255, 0.5);
+  vertical-align: middle;
+}
+
+.mark {
+  color: #a855f7;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 42px;
+  color: #c0c0c0;
+}
+
+h1 span {
+  color: #8a2be2;
+}
+
+p {
+  font-size: 18px;
+}
+
+.buttons {
+  margin-top: 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 8px;
+  border: 1px solid #8a2be2;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  background: #100719;
+}
+
+.btn:hover {
+  background: #8a2be2;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+article {
+  background: #100719;
+  border: 1px solid #8a2be2;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 300px;
+}
+
+footer {
+  padding: 25px;
+  text-align: center;
+  background: #08050d;
+  color: #aaa;
 }
 
 @media (max-width: 700px) {
   .champion {
-  width: 45%;
-  max-width: 500px;
-  height: 520px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 20px;
-  margin: 15px;
-  box-shadow: 0 0 20px #8a2be2, 0 0 45px rgba(138, 43, 226, 0.45);
-  border: 2px solid #c0c0c0;
-  transition: transform 0.3s ease;
-}
-
-.champion:hover {
-  transform: scale(1.03);
-}
-
-@media (max-width: 700px) {
-  .champion {
-    width: 92%;
+    width: 90%;
     height: 420px;
     margin: 10px auto;
     display: block;
+  }
+
+  h1 {
+    font-size: 30px;
   }
 }
