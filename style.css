@@ -157,3 +157,6 @@ footer {
   margin: 15px auto;
   object-fit: cover;
 }
+.content {
+  display: block;
+}
